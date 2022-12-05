@@ -17,9 +17,19 @@
         </div>  
         <section class="cargo">
             <div>
-                <NavbarComp />
-            </div>
-            
+                <div>
+                   <button class="logo">N E X</button><span>G E N</span> 
+                </div>
+                <div class="cont">
+                    <div class="lista">
+                      <NavbarComp v-for="(elem, index) in nav" :key="index" :navList="elem"/>  
+                    </div>
+                    <div class="listaDue">
+                      <span><font-awesome-icon icon="fa-regular fa-user" /></span>
+                      <button class="inTouch">GET IN TOUCH</button> 
+                    </div>
+                </div>
+            </div> 
         </section>
     </header>
 </template>
@@ -41,6 +51,13 @@ export default{
         { icon: '<font-awesome-icon icon="fa-solid fa-phone" />', text: '+1(305) 1234-5678' },
         { icon: '<font-awesome-icon icon="fa-solid fa-envelope" />', text: 'hello@example.com' },
         { iconLuogo: '<font-awesome-icon icon="fa-solid fa-location-dot" />', textLuogo: 'Main Avenue, 987' }
+      ],
+      nav: [
+        {testo: 'HOME'},
+        {testo: 'ABOUT'},
+        {testo: 'SERVICES'},
+        {testo: 'PROCESS'},
+        {testo: 'TESTIMONIALS'}
       ]
     }
   }
@@ -72,10 +89,10 @@ export default{
 }
 
 .cargo{
-    height: 550px;
+    height: 570px;
     background-image: url(../assets/img/bg-9.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     padding-top: 20px;
     color: white;
 }
@@ -83,5 +100,44 @@ export default{
 .cargo > div{
     width: 75%;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista, .listaDue{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.listaDue{
+    padding-left: 20px;
+}
+.cont{
+    display: flex;
+}
+.logo{
+    color: #52bbbb;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 0 8px 20px;
+    background-color: rgba(5, 130, 131, 0.3);
+    border: transparent;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+div > span{
+    font-weight: bold;
+    padding-left: 3px;
+}
+
+.inTouch{
+    padding: 10px;
+    color: white;
+    background-color: rgb(5, 130, 131);
+    border: transparent;
+    border-radius: 3px;
 }
 </style>

@@ -30,6 +30,7 @@ export default {
   padding: 0;
   box-sizing: border-box;
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+  
 }
 #app {
   font-family: 'Montserrat', sans-serif;
