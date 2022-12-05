@@ -19,6 +19,7 @@ export default{
 
 li{
     list-style-type: none;
+    font-weight: 500;
 }
 
 </style>

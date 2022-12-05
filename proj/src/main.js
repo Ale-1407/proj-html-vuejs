@@ -16,10 +16,10 @@ Vue.config.productionTip = false
   import { faFacebookF, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
   /*Import icone regular */
-  import { faUser } from '@fortawesome/free-regular-svg-icons'
+  import { faUser, faGem } from '@fortawesome/free-regular-svg-icons'
 
   /* add icons to the library */
-  library.add(faPhone, faClock, faEnvelope, faLocationDot, faFacebookF, faTwitter, faLinkedinIn, faUser)
+  library.add(faPhone, faClock, faEnvelope, faLocationDot, faFacebookF, faTwitter, faLinkedinIn, faUser, faGem)
 
   /* add font awesome icon component */
   Vue.component('font-awesome-icon', FontAwesomeIcon)

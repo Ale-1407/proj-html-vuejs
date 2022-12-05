@@ -102,12 +102,12 @@ export default{
 }
 
 .cargo{
-    height: 570px;
     background-image: url(../assets/img/bg-9.jpg);
     background-size: cover;
     background-position: top;
     padding-top: 20px;
     color: white;
+    height: 560px;
 }
 
 .menu{
@@ -122,13 +122,12 @@ export default{
     width: 75%;
     margin: auto;
     display: flex;
-    margin-top: 5rem;
     flex-direction: column;
 }
 
 #text{
     color: #52bbbb;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 #text2{
@@ -173,8 +172,8 @@ export default{
 }
 
 .menu-logo > span{
-    font-weight: bold;
     padding-left: 3px;
+    font-weight: 500;
 }
 
 .typeOne{
