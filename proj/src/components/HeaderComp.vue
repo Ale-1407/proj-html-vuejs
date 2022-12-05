@@ -15,18 +15,26 @@
               </div>  
             </div>
         </div>  
+        <section class="cargo">
+            <div>
+                <NavbarComp />
+            </div>
+            
+        </section>
     </header>
 </template>
 
 <script>
 
 import ContattiComp from './ContattiComp.vue';
+import NavbarComp from './NavbarComp.vue';
 
 export default{
     name: 'HeaderComp',
     components: {
-        ContattiComp
-    },
+    ContattiComp,
+    NavbarComp
+},
     data(){
     return{
       contacts: [
@@ -63,4 +71,17 @@ export default{
     gap: 20px;
 }
 
+.cargo{
+    height: 550px;
+    background-image: url(../assets/img/bg-9.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+    color: white;
+}
+
+.cargo > div{
+    width: 75%;
+    margin: auto;
+}
 </style>

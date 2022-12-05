@@ -1,5 +1,6 @@
 <template>
     <div>
+        <!-- <i>{{iconeContatti.icon}}</i> -->
         <span>{{ iconeContatti.text }}</span>
     </div>
 </template>
