@@ -16,8 +16,8 @@
             </div>
         </div>  
         <section class="cargo">
-            <div>
-                <div>
+            <div class="menu">
+                <div class="menu-logo">
                    <button class="logo">N E X</button><span>G E N</span> 
                 </div>
                 <div class="cont">
@@ -26,10 +26,23 @@
                     </div>
                     <div class="listaDue">
                       <span><font-awesome-icon icon="fa-regular fa-user" /></span>
-                      <button class="inTouch">GET IN TOUCH</button> 
+                      <button class="typeOne">GET IN TOUCH</button> 
                     </div>
                 </div>
             </div> 
+            <div class="jumbo">
+                <div class="log-serv">
+                    <div class="content">
+                       <span id="text">LOGISTICS SERVICES</span>
+                       <span id="text2">CARGO TRANSPORT</span>
+                       <span>Fractional or exclusive road cargo transportation to all regions, with small, medium and large vehicles.</span> 
+                    </div>
+                    <div class="buttons">
+                        <button class="typeOne">GET IN TOUCH</button>
+                        <button class="typeTwo">READ MORE</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </header>
 </template>
@@ -97,12 +110,43 @@ export default{
     color: white;
 }
 
-.cargo > div{
+.menu{
     width: 75%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.log-serv{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: column;
+}
+
+#text{
+    color: #52bbbb;
+    font-weight: bold;
+}
+
+#text2{
+    font-size: 55px;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+.buttons{
+    display: flex;
+    padding-top: 30px;
+    gap: 10px;
+}
+.content{
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: column;
+    width: 45%;
 }
 
 .lista, .listaDue{
@@ -128,16 +172,25 @@ export default{
     border-bottom-left-radius: 20px;
 }
 
-div > span{
+.menu-logo > span{
     font-weight: bold;
     padding-left: 3px;
 }
 
-.inTouch{
-    padding: 10px;
+.typeOne{
+    padding: 8px 10px;
     color: white;
     background-color: rgb(5, 130, 131);
     border: transparent;
     border-radius: 3px;
+    font-size: 12px;
+}
+
+.typeTwo{
+    padding: 8px 10px;
+    background-color: transparent;
+    border: 1px solid rgb(5, 130, 131);
+    color: white;
+    font-size: 12px;
 }
 </style>
