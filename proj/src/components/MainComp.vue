@@ -23,6 +23,21 @@
                     </ul>
                 </div>
                 <div class="types">
+                    <span class="black-text">Vehicle Types</span>
+                    <div class="vehicles" v-for="(elem, index) in trucks" :key="index">
+                        <img :src="require(`../assets/img/${elem.img}`)" alt="truck">
+                        <div class="vehicles-text">
+                            <span class="black-text">{{ elem.info }}</span>
+                            <span>{{ elem.weight }}</span>
+                        </div>
+                    </div>
+                    <div class="certific">
+                      <span class="black-text">Certifications</span> 
+                      <div>
+                        <img src="../assets/img/certificate.png" alt="img">
+                        <img src="../assets/img/certificate.png" alt="img">
+                      </div>   
+                    </div>
                     
                 </div>
             </div>
@@ -33,7 +48,16 @@
 <script>
 
 export default{
-    name: 'MainComp'
+    name: 'MainComp',
+    data() {
+        return{
+            trucks: [
+                { img: 'truck-1.png', info: 'Light', weight: 'Max Weight 1200 Kg', },
+                { img: 'truck-1.png', info: 'Medium', weight: 'Max Weight 6000 Kg', },
+                { img: 'truck-1.png', info: 'Heavy', weight: 'Max Weight 24000 Kg', }
+            ]
+        }
+    }
 }
 
 </script>
@@ -46,8 +70,8 @@ section{
     width: 75%;
     margin: auto;
     display: flex;
-    align-items: center;
     padding: 2.5rem 0;
+    gap: 40px;
 }
 
 .text{
@@ -92,6 +116,46 @@ ul{
 
 .types{
     width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.vehicles{
+    display: flex;
+    margin-top: 20px;
+    gap: 15px;
+    border-bottom: 1.5px solid lightgray;
+    padding: 10px;
+    width: 78%;
+}
+
+.vehicles img{
+    height: 40px;
+}
+
+.vehicles-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.black-text{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.vehicles-text :nth-child(2){
+    font-size: 12px;
+    color: grey;
+}
+
+.certific{
+    margin-top: 35px;
+}
+
+.certific img{
+    height: 80px;
+    margin-top: 20px;
+    margin-right: 10px;
 }
 
 </style>
