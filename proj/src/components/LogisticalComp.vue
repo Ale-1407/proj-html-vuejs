@@ -52,6 +52,7 @@ export default{
 
 section{
     padding: 2.5rem 0;
+    color: grey;
 }
 .text{
     width: 50%;
@@ -60,6 +61,7 @@ section{
     display: flex;
     flex-direction: column;
     padding-top: 2.5rem;
+    
 }
 
 #blue-text{
@@ -72,6 +74,7 @@ section{
     font-weight: 800;
     font-size: 35px;
     padding: 20px 0;
+    color: black;
 }
 
 .text-logistical :nth-child(1){
@@ -118,5 +121,6 @@ section{
     font-size: 20px;
     font-weight: 700;
     padding-bottom: 15px;
+    color: black;
 }
 </style>

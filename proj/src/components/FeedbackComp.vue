@@ -39,7 +39,7 @@ export default{
 
 section{
     padding: 2.5rem 0;
-    background-color: #191c1e;
+    background-color: #121117;
     color: rgb(195, 195, 195);
 }
 
@@ -78,6 +78,7 @@ section{
     gap: 20px;
     width: 75%;
     margin: auto;
+    padding-bottom: 2.5rem;
 }
 .card{
     display: flex;
