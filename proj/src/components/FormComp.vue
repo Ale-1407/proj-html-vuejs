@@ -33,7 +33,18 @@
                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
                 <span>Praesent diam lacus, dapibus sed imperdiet consectetur.</span>
                 <div class="contacts">
-
+                    <div>
+                        <span class="circle"><font-awesome-icon icon="fa-solid fa-phone" /></span>
+                        <span>+1(305) 1234-5678</span>
+                    </div>
+                    <div>
+                        <span class="circle"><font-awesome-icon icon="fa-solid fa-envelope" /></span>
+                        <span>hello@example.com</span>
+                    </div>
+                    <div>
+                        <span class="circle-2"><font-awesome-icon icon="fa-solid fa-location-dot" /></span>
+                        <span>Main Avenue, 987</span>
+                    </div>
                 </div>
                 <div>
                   <button class="typeTwo">VIEW MAP</button>  
@@ -166,5 +177,33 @@ section{
     color: #038384;
     font-size: 14px;
     border-radius: 3px;
+    margin-top: 10px;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #038384;
+}
+
+.contacts > div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.circle{
+    border-radius: 50%;
+    background-color: rgba(3, 131, 132, 0.2);
+    padding: 12px;
+    font-size: 16px;
+}
+
+.circle-2{
+    border-radius: 50%;
+    background-color: rgba(3, 131, 132, 0.2);
+    font-size: 16px;
+    padding: 12px 15px;
 }
 </style>
