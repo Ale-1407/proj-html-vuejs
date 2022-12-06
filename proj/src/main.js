@@ -10,7 +10,7 @@ Vue.config.productionTip = false
   import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
   /* import specific icons */
-  import { faPhone, faClock, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+  import { faPhone, faClock, faEnvelope, faLocationDot, faTruckRampBox, faTemperatureLow, faBoxesStacked, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
   /*Import icone brands */
   import { faFacebookF, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
@@ -19,7 +19,7 @@ Vue.config.productionTip = false
   import { faUser, faGem } from '@fortawesome/free-regular-svg-icons'
 
   /* add icons to the library */
-  library.add(faPhone, faClock, faEnvelope, faLocationDot, faFacebookF, faTwitter, faLinkedinIn, faUser, faGem)
+  library.add(faPhone, faClock, faEnvelope, faLocationDot, faFacebookF, faTwitter, faLinkedinIn, faUser, faGem, faTruckRampBox, faTemperatureLow, faBoxesStacked, faArrowRight)
 
   /* add font awesome icon component */
   Vue.component('font-awesome-icon', FontAwesomeIcon)

@@ -38,25 +38,31 @@
                         <img src="../assets/img/certificate.png" alt="img">
                       </div>   
                     </div>
-                    
                 </div>
             </div>
         </section>
+        <MainServices />
     </main>
 </template>
 
 <script>
 
+import MainServices from './MainServices.vue';
+
+
 export default{
-    name: 'MainComp',
+    name: "MainComp",
     data() {
-        return{
+        return {
             trucks: [
-                { img: 'truck-1.png', info: 'Light', weight: 'Max Weight 1200 Kg', },
-                { img: 'truck-1.png', info: 'Medium', weight: 'Max Weight 6000 Kg', },
-                { img: 'truck-1.png', info: 'Heavy', weight: 'Max Weight 24000 Kg', }
+                { img: "truck-1.png", info: "Light", weight: "Max Weight 1200 Kg", },
+                { img: "truck-1.png", info: "Medium", weight: "Max Weight 6000 Kg", },
+                { img: "truck-1.png", info: "Heavy", weight: "Max Weight 24000 Kg", }
             ]
-        }
+        };
+    },
+    components: { 
+        MainServices 
     }
 }
 
@@ -86,7 +92,7 @@ section{
 #blue-text{
     color: #52bbbb;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .bordo{
@@ -104,7 +110,7 @@ ul{
     font-weight: 800;
     font-size: 35px;
     background-color: rgba(3, 131, 132, 0.2);
-    padding: 4px;
+    padding: 4px 8px;
     border-radius: 3px;
 }
 

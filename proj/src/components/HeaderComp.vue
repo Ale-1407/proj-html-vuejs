@@ -107,7 +107,7 @@ export default{
     background-position: top;
     padding-top: 20px;
     color: white;
-    height: 560px;
+    height: 95vh;
 }
 
 .menu{
@@ -182,7 +182,7 @@ export default{
     background-color: rgb(5, 130, 131);
     border: transparent;
     border-radius: 3px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .typeTwo{
@@ -190,6 +190,7 @@ export default{
     background-color: transparent;
     border: 1px solid rgb(5, 130, 131);
     color: white;
-    font-size: 12px;
+    font-size: 14px;
+    border-radius: 3px;
 }
 </style>
