@@ -6,7 +6,8 @@
             </div>
             <div class="info">
               <div class="contatti">
-                <ContattiComp v-for="(elem, index) in contacts" :key="index" :iconeContatti="elem" />
+                <span><font-awesome-icon icon="fa-solid fa-phone" /> +1(305)1234-5678</span>
+                <span><font-awesome-icon icon="fa-solid fa-envelope" /> hello@example.com</span>
               </div>
               <div class="social">
                 <font-awesome-icon icon="fa-brands fa-facebook-f" />
@@ -49,13 +50,11 @@
 
 <script>
 
-import ContattiComp from './ContattiComp.vue';
 import NavbarComp from './NavbarComp.vue';
 
 export default{
     name: 'HeaderComp',
     components: {
-    ContattiComp,
     NavbarComp
 },
     data(){
@@ -91,7 +90,7 @@ export default{
 }
 .contatti{
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .social{

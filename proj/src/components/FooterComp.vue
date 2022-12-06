@@ -1,14 +1,17 @@
 <template>
     <footer>
-        
+        <FootInfo />
     </footer>
 </template>
 
 <script>
 
-export default{
-    name: 'FooterComp'
-}
-    
+import FootInfo from './FootInfo.vue';
 
+export default{
+    name: "FooterComp",
+    components: { 
+        FootInfo 
+    }
+}
 </script>
