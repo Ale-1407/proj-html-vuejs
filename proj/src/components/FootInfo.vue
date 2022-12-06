@@ -25,15 +25,25 @@
                 </div>
             </div>
             <div class="cont-card">
-
+               <div class="cards">
+                   <div class="card">
+                    
+                   </div>
+                </div> 
             </div>
+            
         </div>
     </section>
 </template>
 
 <script>
 export default{
-    name: 'FootInfo'
+    name: 'FootInfo',
+    data(){
+        return{
+            
+        }
+    }
 }
 </script>
 
@@ -105,5 +115,20 @@ section{
 
 .grey-text{
     color: grey;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 75%;
+    margin: auto;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    background-color: rgba(63, 63, 63, 0.2);
+    border-radius: 8px;
 }
 </style>
