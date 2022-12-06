@@ -44,11 +44,13 @@
         <MainServices />
         <LogisticalComp />
         <ResultsComp />
+        <FeedbackComp />
     </main>
 </template>
 
 <script>
 
+import FeedbackComp from './FeedbackComp.vue';
 import LogisticalComp from './LogisticalComp.vue';
 import MainServices from './MainServices.vue';
 import ResultsComp from './ResultsComp.vue';
@@ -68,7 +70,8 @@ export default{
     components: {
     MainServices,
     LogisticalComp,
-    ResultsComp
+    ResultsComp,
+    FeedbackComp
 }
 }
 
@@ -92,7 +95,7 @@ section{
     flex-direction: column;
     gap: 20px;
     color: grey;
-    font-size: 12px;
+    
 }
 
 #blue-text{

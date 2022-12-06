@@ -55,8 +55,8 @@ export default{
 <style lang="scss" scoped>
 
 section{
-    background-color: black;
-    color: white;
+    background-color: #121117;
+    color: rgb(195, 195, 195);
     padding: 2.5rem 0;
 }
 
@@ -77,6 +77,7 @@ section{
     font-weight: 800;
     font-size: 35px;
     padding: 20px 0;
+    color: white;
 }
 
 .text-services :nth-child(2){
