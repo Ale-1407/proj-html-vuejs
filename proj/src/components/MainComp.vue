@@ -42,11 +42,13 @@
             </div>
         </section>
         <MainServices />
+        <LogisticalComp />
     </main>
 </template>
 
 <script>
 
+import LogisticalComp from './LogisticalComp.vue';
 import MainServices from './MainServices.vue';
 
 
@@ -61,9 +63,10 @@ export default{
             ]
         };
     },
-    components: { 
-        MainServices 
-    }
+    components: {
+    MainServices,
+    LogisticalComp
+}
 }
 
 </script>
