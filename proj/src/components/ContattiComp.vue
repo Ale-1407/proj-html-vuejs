@@ -1,8 +1,8 @@
 <template>
     <div>
         <!-- <i>{{iconeContatti.icon}}</i> -->
-        <span>{{ iconeContatti.text }}</span>
-    </div>
+        <span> <i>{{  }}</i> {{ iconeContatti.text }}</span>
+    </div> 
 </template>
 
 <script>

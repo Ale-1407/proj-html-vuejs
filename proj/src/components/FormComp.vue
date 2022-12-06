@@ -29,7 +29,15 @@
                 </div>
             </div>
             <div class="cont-2">
+                <span id="black-text">Example Inc.</span>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                <span>Praesent diam lacus, dapibus sed imperdiet consectetur.</span>
+                <div class="contacts">
 
+                </div>
+                <div>
+                  <button class="typeTwo">VIEW MAP</button>  
+                </div>
             </div>
         </div>
     </section>
@@ -89,6 +97,9 @@ section{
 
 .cont-2{
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .form-statico{
@@ -143,4 +154,17 @@ section{
     width: 20px;
 }
 
+#black-text{
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+}
+.typeTwo{
+    padding: 8px 10px;
+    background-color: transparent;
+    border: 1px solid rgb(5, 130, 131);
+    color: #038384;
+    font-size: 14px;
+    border-radius: 3px;
+}
 </style>

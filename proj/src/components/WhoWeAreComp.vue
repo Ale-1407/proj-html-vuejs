@@ -134,7 +134,7 @@ ul{
 
 .black-text{
     font-weight: 700;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .vehicles-text :nth-child(2){

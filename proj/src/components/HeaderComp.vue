@@ -63,7 +63,6 @@ export default{
       contacts: [
         { icon: '<font-awesome-icon icon="fa-solid fa-phone" />', text: '+1(305) 1234-5678' },
         { icon: '<font-awesome-icon icon="fa-solid fa-envelope" />', text: 'hello@example.com' },
-        { iconLuogo: '<font-awesome-icon icon="fa-solid fa-location-dot" />', textLuogo: 'Main Avenue, 987' }
       ],
       nav: [
         {testo: 'HOME'},
