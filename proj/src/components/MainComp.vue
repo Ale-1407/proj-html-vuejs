@@ -43,6 +43,7 @@
         </section>
         <MainServices />
         <LogisticalComp />
+        <ResultsComp />
     </main>
 </template>
 
@@ -50,6 +51,7 @@
 
 import LogisticalComp from './LogisticalComp.vue';
 import MainServices from './MainServices.vue';
+import ResultsComp from './ResultsComp.vue';
 
 
 export default{
@@ -65,7 +67,8 @@ export default{
     },
     components: {
     MainServices,
-    LogisticalComp
+    LogisticalComp,
+    ResultsComp
 }
 }
 
