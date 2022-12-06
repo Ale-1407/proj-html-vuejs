@@ -161,7 +161,7 @@ export default{
 .logo{
     color: #52bbbb;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     padding: 8px 0 8px 20px;
     background-color: rgba(5, 130, 131, 0.3);
     border: transparent;
@@ -171,7 +171,8 @@ export default{
 
 .menu-logo > span{
     padding-left: 3px;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .typeOne{
