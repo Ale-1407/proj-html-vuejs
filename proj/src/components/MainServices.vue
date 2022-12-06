@@ -17,19 +17,25 @@
             <div class="cards">
                 <div class="card">
                     <span class="arrow"><font-awesome-icon icon="fa-solid fa-arrow-right" /></span>
-                    <div class="icon icon1"><font-awesome-icon icon="fa-solid fa-truck-ramp-box" /></div>
+                    <div class="icon">
+                        <span><font-awesome-icon icon="fa-solid fa-truck-ramp-box" /></span>  
+                    </div>
                     <span class="title">Technology</span>
                     <span>We are continually focused on developing technology solutions adapted to our clients needs.</span>
                 </div>
                <div class="card">
                     <span class="arrow"><font-awesome-icon icon="fa-solid fa-arrow-right" /></span>
-                    <div class="icon icon2"><font-awesome-icon icon="fa-solid fa-temperature-low" /></div>
+                    <div class="icon">
+                        <span><font-awesome-icon icon="fa-solid fa-temperature-low" /></span>
+                    </div>
                     <span class="title">Reefer Cargo</span>
                     <span>Regular and frequent monitoring from the receipt of the loaded container to final destination.</span>
                </div>
                <div class="card">
                     <span class="arrow"><font-awesome-icon icon="fa-solid fa-arrow-right" /></span>
-                    <div class="icon icon3"><font-awesome-icon icon="fa-solid fa-boxes-stacked" /></div>
+                    <div class="icon">
+                        <span><font-awesome-icon icon="fa-solid fa-boxes-stacked" /></span>
+                    </div>
                     <span class="title">Dry Cargo</span>
                     <span>We work with most types of dry cargo, from valuable cargo to the most dangerous requiring care.</span> 
                </div>
@@ -106,7 +112,7 @@ section{
     display: flex;
     flex-direction: column;
     padding: 2.5rem;
-    background-color: rgba(63, 63, 63, 0.4);
+    background-color: rgba(63, 63, 63, 0.2);
     border-radius: 8px;
 }
 
@@ -122,14 +128,12 @@ section{
     color: rgba(82, 187, 187, 0.5);
 }
 
-.icon{
+.icon span{
     font-size: 25px;
     color: #52bbbb;
-    width: 30.4px;
-    background-color: rgb(82, 187, 187, 0.3);
     border-radius: 50%;
-    background-size: contain;
-    background-position: center;
+    background-color: rgba(3, 131, 132, 0.2);
+    padding: 8px 10px;
 }
 
 
