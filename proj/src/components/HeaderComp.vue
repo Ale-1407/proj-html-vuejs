@@ -117,11 +117,16 @@ export default{
     align-items: center;
 }
 
+.jumbo{
+    padding-top: 20px;
+}
+
 .log-serv{
     width: 75%;
     margin: auto;
     display: flex;
     flex-direction: column;
+    padding-top: 2rem;
 }
 
 #text{
