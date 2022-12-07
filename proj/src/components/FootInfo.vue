@@ -9,15 +9,15 @@
                 <div class="contacts">
                     <div>
                         <span><font-awesome-icon icon="fa-solid fa-phone" /></span>
-                        <span class="grey-text">+1(305) 1234-5678</span>
+                        <span>+1(305) 1234-5678</span>
                     </div>
                     <div>
                         <span><font-awesome-icon icon="fa-solid fa-envelope" /></span>
-                        <span class="grey-text">hello@example.com</span>
+                        <span>hello@example.com</span>
                     </div>
                     <div>
                         <span><font-awesome-icon icon="fa-solid fa-location-dot" /></span>
-                        <span class="grey-text">Main Avenue, 987</span>
+                        <span>Main Avenue, 987</span>
                     </div>
                 </div>
                 <div>
@@ -96,6 +96,7 @@ section{
     width: 75%;
     margin: auto;
     display: flex;
+    justify-content: space-around;
 }
 
 .cont-info{
@@ -158,8 +159,7 @@ section{
     display: flex;
     flex-direction: row;
     gap: 20px;
-    width: 75%;
-    margin: auto;
+    justify-content: end;
 }
 
 
@@ -169,8 +169,8 @@ section{
     background-color: rgba(63, 63, 63, 0.2);
     border-radius: 8px;
     line-height: 28px;
-    width: 60%;
-    padding: 40px;
+    width: 25%;
+    padding: 2rem;
 }
 
 .card h3{
