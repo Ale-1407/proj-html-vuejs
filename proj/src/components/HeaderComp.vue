@@ -22,6 +22,7 @@
                    <button class="logo">N E X</button><span>G E N</span> 
                 </div>
                 <div class="cont">
+                    <!-- LISTA DINAMICA COMPONENT NAVBARCOMP -->
                     <div class="lista">
                       <NavbarComp v-for="(elem, index) in nav" :key="index" :navList="elem"/>  
                     </div>

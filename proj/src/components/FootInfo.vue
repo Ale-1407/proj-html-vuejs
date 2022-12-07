@@ -27,21 +27,58 @@
             <div class="cont-card">
                <div class="cards">
                    <div class="card">
-                    
+                      <h3>About</h3>
+                      <FootLista v-for="(elem, index) in vociMenu" :key="index" :footList="elem" />
+                   </div>
+                   <div class="card">
+                    <h3>Transport</h3>
+                    <FootListaDue v-for="(elem, index) in vociMenuDue" :key="index" :footListDue="elem" />
+                   </div>
+                   <div class="card">
+                    <h3>Support</h3>
+                    <FootListaTre v-for="(elem, index) in vociMenuTre" :key="index" :footListTre="elem" />
                    </div>
                 </div> 
             </div>
-            
         </div>
     </section>
 </template>
 
 <script>
+
+import FootLista from './FootLista.vue'
+import FootListaDue from './FootListaDue.vue'
+import FootListaTre from './FootListaTre.vue';
+
 export default{
+    components: { FootLista, FootListaDue, FootListaTre },
     name: 'FootInfo',
     data(){
         return{
-            
+            vociMenu: [
+                {voce: 'The Company'},
+                {voce: 'Institutional'},
+                {voce: 'Social & Events'},
+                {voce: 'Innovation'},
+                {voce: 'Environment'},
+                {voce: 'Technology'}
+            ],
+            vociMenuDue: [
+                {voce: 'Industrialized'},
+                {voce: 'Chemicals'},
+                {voce: 'Packaged Liquids'},
+                {voce: 'Contruction'},
+                {voce: 'Laminated Wood'},
+                {voce: 'And others'}
+            ],
+            vociMenuTre: [
+                {voce: 'Responsibility'},
+                {voce: 'Terms of Use'},
+                {voce: 'About Cookies'},
+                {voce: 'Privacy Policy'},
+                {voce: 'Accessibility'},
+                {voce: 'Information'}
+            ]
         }
     }
 }
@@ -124,11 +161,18 @@ section{
     width: 75%;
     margin: auto;
 }
+
+
 .card{
     display: flex;
     flex-direction: column;
     padding: 2.5rem;
     background-color: rgba(63, 63, 63, 0.2);
     border-radius: 8px;
+    line-height: 28px;
+}
+
+.card h3{
+    padding-bottom: 10px;
 }
 </style>
