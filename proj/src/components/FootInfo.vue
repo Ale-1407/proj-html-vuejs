@@ -151,6 +151,10 @@ section{
     width: 80%;
 }
 
+.typeTwo:hover{
+    background-color: rgb(5, 130, 131);
+    color: black;
+}
 .grey-text{
     color: grey;
 }

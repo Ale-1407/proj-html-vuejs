@@ -10,9 +10,9 @@
                 <span><font-awesome-icon icon="fa-solid fa-envelope" /> hello@example.com</span>
               </div>
               <div class="social">
-                <font-awesome-icon icon="fa-brands fa-facebook-f" />
-                <font-awesome-icon icon="fa-brands fa-twitter" />
-                <font-awesome-icon icon="fa-brands fa-linkedin-in" />
+                <font-awesome-icon icon="fa-brands fa-facebook-f" class="cursor"/>
+                <font-awesome-icon icon="fa-brands fa-twitter" class="cursor"/>
+                <font-awesome-icon icon="fa-brands fa-linkedin-in" class="cursor"/>
               </div>  
             </div>
         </div>  
@@ -27,7 +27,7 @@
                       <NavbarComp v-for="(elem, index) in nav" :key="index" :navList="elem"/>  
                     </div>
                     <div class="listaDue">
-                      <span><font-awesome-icon icon="fa-regular fa-user" /></span>
+                      <span><font-awesome-icon icon="fa-regular fa-user" class="cursor"/></span>
                       <button class="typeOne">GET IN TOUCH</button> 
                     </div>
                 </div>
@@ -86,6 +86,9 @@ export default{
     padding: 15px 0;
 }
 
+.cursor{
+    cursor: pointer;
+}
 .info{
     display: flex;
 }
@@ -185,11 +188,19 @@ export default{
     padding: 8px 10px;
     color: white;
     background-color: rgb(5, 130, 131);
-    border: transparent;
+    border: 1px solid transparent;
     border-radius: 3px;
     font-size: 14px;
 }
 
+.typeOne:hover{
+    background-color: transparent;
+    border: 1px solid rgb(5, 130, 131);
+}
+
+.typeTwo:hover{
+    background-color: rgb(5, 130, 131);
+}
 .typeTwo{
     padding: 8px 10px;
     background-color: transparent;

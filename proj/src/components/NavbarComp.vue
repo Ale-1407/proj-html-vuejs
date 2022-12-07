@@ -22,4 +22,10 @@ li{
     font-weight: 500;
 }
 
+li:hover{
+    border-bottom: 3px solid #52bbbb;
+    padding-bottom: 5px;
+
+}
+
 </style>

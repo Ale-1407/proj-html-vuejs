@@ -99,6 +99,10 @@ section{
     margin-left: 30px;
 }
 
+.typeTwo:hover{
+    background-color: rgb(5, 130, 131);
+    color: white;
+}
 .div-1{
     width: 90%;
 }

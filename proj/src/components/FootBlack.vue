@@ -48,4 +48,9 @@ section{
     font-size: 18px;
     color: rgba(4, 15, 15, 0.6);
 }
+
+.arrow span:hover{
+    color: rgb(5, 130, 131);
+    cursor: pointer;
+}
 </style>

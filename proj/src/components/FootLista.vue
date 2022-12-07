@@ -21,4 +21,9 @@ li{
     list-style-type: none;
     font-size: 13px;
 }
+
+li:hover{
+    color: rgb(5, 130, 131);
+    cursor: pointer;
+}
 </style>

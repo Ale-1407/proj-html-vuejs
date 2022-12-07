@@ -151,6 +151,11 @@ section{
     font-size: 14px;
 }
 
+.typeOne:hover{
+    background-color: transparent;
+    color: rgb(5, 130, 131);
+    border: 1px solid rgb(5, 130, 131);
+}
 .info{
     display: flex;
     justify-content: space-between;
@@ -180,6 +185,10 @@ section{
     margin-top: 10px;
 }
 
+.typeTwo:hover{
+    background-color: rgb(5, 130, 131);
+    color: white;
+}
 .contacts{
     display: flex;
     flex-direction: column;
