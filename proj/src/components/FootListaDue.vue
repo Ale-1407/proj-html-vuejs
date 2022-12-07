@@ -19,5 +19,6 @@ export default{
 <style lang="scss" scoped>
 li{
     list-style-type: none;
+    font-size: 13px;
 }
 </style>

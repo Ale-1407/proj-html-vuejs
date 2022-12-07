@@ -140,7 +140,7 @@ section{
 }
 
 .typeTwo{
-    padding: 14px 18px;
+    padding: 10px;
     background-color: transparent;
     border: 1px solid rgb(5, 130, 131);
     color: white;
@@ -166,10 +166,11 @@ section{
 .card{
     display: flex;
     flex-direction: column;
-    padding: 2.5rem;
     background-color: rgba(63, 63, 63, 0.2);
     border-radius: 8px;
     line-height: 28px;
+    width: 60%;
+    padding: 40px;
 }
 
 .card h3{
