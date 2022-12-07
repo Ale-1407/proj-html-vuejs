@@ -10,20 +10,24 @@
                     </div>
                     <span>We will respond to your message as soon as possible</span>
                 </div>
-                <div class="form-statico">
+                <div class="form">
                     <div class="flex">
-                       <span>Name</span>
-                       <span>Email</span>
+                       <input type="text" placeholder="Name">
+                       <input type="text" placeholder="Email">
                     </div>
                     <div class="flex">
-                        <span>Phone</span>
-                        <span class="info">
-                            <span>More Info</span>
-                            <span><font-awesome-icon icon="fa-solid fa-chevron-down" /></span>
-                        </span>
+                        <input type="text" placeholder="Phone">
+                        <select class="select">
+                           <option selected>More Info</option>
+                           <option value="1">One</option>
+                           <option value="2">Two</option>
+                           <option value="3">Three</option>
+                        </select>
                     </div>
                     <div class="flex-2">
-                        <span>Message</span>
+                        <div>
+                           <textarea name="message" id="message" rows="10" cols="79" placeholder="Message"></textarea>
+                        </div>
                     </div>
                     <button class="typeOne">SEND</button>
                 </div>
@@ -113,7 +117,7 @@ section{
     gap: 20px;
 }
 
-.form-statico{
+.form{
     padding-top: 3rem;
 }
 
@@ -146,7 +150,7 @@ section{
     padding: 8px 15px;
     color: white;
     background-color: rgb(5, 130, 131);
-    border: transparent;
+    border: 1px solid transparent;
     border-radius: 3px;
     font-size: 14px;
 }
@@ -156,18 +160,23 @@ section{
     color: rgb(5, 130, 131);
     border: 1px solid rgb(5, 130, 131);
 }
-.info{
-    display: flex;
-    justify-content: space-between;
+
+input, select{
+    width: 45%;
+    padding: 10px;
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+    background-color: rgba(211, 211, 211, 0.4);
+    border-radius: 3px;
 }
 
-.info span{
-    background-color: transparent;
-    padding: 0;
-}
-
-.info :nth-child(2){
-    width: 20px;
+#message{
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+    background-color: rgba(211, 211, 211, 0.4);
+    border-radius: 3px;
 }
 
 #black-text{

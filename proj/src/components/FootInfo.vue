@@ -163,7 +163,7 @@ section{
     display: flex;
     flex-direction: row;
     gap: 20px;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 
